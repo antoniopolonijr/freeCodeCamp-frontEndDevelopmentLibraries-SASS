@@ -1,3 +1,53 @@
+/* In Sass, a mixin is a group of CSS declarations that can be reused throughout the style sheet. The definition starts with the @mixin at-rule, followed by a custom name. You apply the mixin using the @include at-rule.
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul {
+  @include reset-list;
+}
+Compiles to:
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+Your mixins can also take arguments, which allows their behavior to be customized. The arguments are required when using the mixin.
+
+@mixin prose($font-size, $spacing) {
+  font-size: $font-size;
+  margin: 0;
+  margin-block-end: $spacing;
+}
+
+p {
+  @include prose(1.25rem, 1rem);
+}
+
+h2 {
+  @include prose(2.4rem, 1.5rem);
+}
+
+You can make arguments optional by giving the parameters default values.
+
+@mixin text-color($color: black) {
+  color: $color;
+}
+
+p {
+  @include text-color(); /* color: black */ /*
+}
+
+nav a {
+  @include text-color(orange);
+}
+
+Write a mixin named shape and give it 3 parameters: $w, $h, and $bg-color. */
 #square {
   width: 50px;
   height: 50px;
