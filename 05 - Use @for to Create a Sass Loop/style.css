@@ -1,1 +1,32 @@
-/*# sourceMappingURL=style.css.map */
+/* The @for directive adds styles in a loop, very similar to a for loop in JavaScript.
+
+@for is used in two ways: "start through end" or "start to end". The main difference is that the "start to end" excludes the end number as part of the count, and "start through end" includes the end number as part of the count.
+
+This is a powerful way to create a grid layout.
+
+Write a @for directive that takes a variable $j that goes from 1 to 6.
+
+It should create 5 classes called .text-1 to .text-5 where each has a font-size set to 15px multiplied by the index. */
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.text-6 {
+  font-size: 90px;
+}/*# sourceMappingURL=style.css.map */
