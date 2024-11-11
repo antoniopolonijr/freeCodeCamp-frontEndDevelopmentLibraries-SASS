@@ -1,3 +1,18 @@
+/* The last challenge showed how the @for directive uses a starting and ending value to loop a certain number of times. Sass also offers the @each directive which loops over each item in a list or map. On each iteration, the variable gets assigned to the current value from the list or map.
+
+Write an @each directive that goes through a list: blue, black, red and assigns each variable to a .color-bg class, where the color part changes for each item to the respective color. Each class should set the background-color to the respective color as well. */
+.blue-bg {
+  background-color: blue;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.red-bg {
+  background-color: red;
+}
+
 div {
   height: 200px;
   width: 200px;
